@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_condition"
+        style="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textIsSelectable="true"
+        tools:context=".ui.ItemDetailFragment"
+        tools:text="New" />
+
+    <TextView
+        android:id="@+id/item_price"
+        style="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        android:textColor="@color/purple_500"
+        android:textIsSelectable="true"
+        tools:context=".ui.ItemDetailFragment"
+        tools:text="$ 500" />
+
+    <TextView
+        android:id="@+id/item_detail"
+        style="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:linksClickable="true"
+        android:padding="16dp"
+        android:textIsSelectable="true"
+        tools:context=".ui.ItemDetailFragment"
+        tools:text="An amazing product" />
+
+</LinearLayout>
