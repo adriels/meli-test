@@ -50,7 +50,7 @@ class SimpleItemRecyclerViewAdapter(var values: List<Result>, var primaryResults
                     .load(item.thumbnail)
                     .into(image)
                 content.text = item.title
-                price.text = item.price.toString()
+                price.text = "$ ${item.price}"
                 setOnClickListener(onClickListener)
             }
         }

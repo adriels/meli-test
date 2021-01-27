@@ -47,8 +47,8 @@ class ItemDetailFragment : Fragment() {
                     .load(item?.thumbnail)
                     .into(activity?.detail_image!!)
             item_condition.text = if (it.condition.isNullOrBlank()) "Condition not provided" else it.condition?.capitalize(Locale.getDefault())
-            item_price.text = "${it.currency_id} ${it.price.toString()}"
-            item_detail.text = "For more information visit:\n ${it.permalink}"
+            item_price.text = "${it.currency_id} ${it.price}"
+            item_detail.text = "For more information visit:\n${it.permalink}"
         }
     }
 
